@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoletsa Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="Zoletsalogo.jpg" alt="Zoletsa Fashion Logo">
+    <h1>Zoletsa</h1>
+  </div>
+
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="slide active">
+    <img src="secondslider.jpg" alt="Luxury Fashion">
+    <div class="caption">
+      <h2>Effortless Luxury</h2>
+      <p>Discover premium pieces crafted for modern elegance.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="thirdslider.jpg" alt="Streetwear">
+    <div class="caption">
+      <h2>Bold. Modern. You.</h2>
+      <p>Elevate your style with timeless quality.</p>
+    </div>
+  </div>
+
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products">
+  <h2>Our Collection</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="Dresses.jpg" alt="Dresses">
+      <h3>Dresses</h3>
+    </div>
+
+    <div class="product">
+      <img src="Knitwear.jpg" alt="Knitwear">
+      <h3>Knitwear</h3>
+    </div>
+
+    <div class="product">
+      <img src="bags.jpg" alt="Bags">
+      <h3>Bags</h3>
+    </div>
+
+    <div class="product">
+      <img src="shoes.jpg" alt="Shoes">
+      <h3>Shoes</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about-content">
+    <h2>About Zoletsa</h2>
+    <p>
+      Zoletsa embodies modern luxury — where elegance meets simplicity.
+      Every piece is curated to express confidence, comfort, and timeless style.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Stay Connected</h2>
+  <form>
+    <input type="email" placeholder="Enter your email">
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Zoletsa Fashion. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
