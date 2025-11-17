@@ -17,3 +17,12 @@ function showSlides(n) {
 
   slides[slideIndex].classList.add("active");
 }
+let cartCount = 0;
+
+function addToCart() {
+  cartCount++;
+  document.querySelector(".cart-count").textContent = cartCount;
+}
+
+// Example usage: Call addToCart() when a product is clicked
+// <button onclick="addToCart()">Add to Cart</button>
