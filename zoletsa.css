@@ -114,6 +114,35 @@ nav a:hover {
   }
 }
 
+/* ===== CART ICON ===== */
+.cart {
+  margin-left: 20px;
+  position: relative;
+}
+
+.cart a {
+  font-size: 1.4rem;
+  color: #3a3a3a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cart a:hover {
+  color: #b38a63;
+  transform: scale(1.1);
+}
+
+/* Cart item count badge */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #b33c6d;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
 
 /* ===== HERO / SLIDER ===== */
 .hero {
