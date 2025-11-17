@@ -58,6 +58,63 @@ nav a:hover {
   color: #b38a63;
 }
 
+/* ===== SEARCH BAR ===== */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  width: 300px;
+  border: 1px solid #bbb;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #b38a63;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  border: 1px solid #bbb;
+  border-left: none;
+  background: #b38a63;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background: #a17852;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-container input {
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .search-container button {
+    width: 50%;
+    border-radius: 25px;
+  }
+}
+
+
 /* ===== HERO / SLIDER ===== */
 .hero {
   position: relative;
@@ -118,62 +175,6 @@ nav a:hover {
 
 .prev:hover, .next:hover {
   background: #e7dbd0;
-}
-
-/* ===== SEARCH BAR ===== */
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  gap: 10px;
-}
-
-.search-container input {
-  padding: 10px 15px;
-  width: 300px;
-  border: 1px solid #bbb;
-  border-radius: 25px 0 0 25px;
-  outline: none;
-  font-size: 1rem;
-  transition: 0.3s;
-}
-
-.search-container input:focus {
-  border-color: #b38a63;
-}
-
-.search-container button {
-  padding: 10px 15px;
-  border: 1px solid #bbb;
-  border-left: none;
-  background: #b38a63;
-  color: #fff;
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.search-container button:hover {
-  background: #a17852;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .search-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .search-container input {
-    width: 90%;
-    border-radius: 25px;
-  }
-
-  .search-container button {
-    width: 50%;
-    border-radius: 25px;
-  }
 }
 
 /* ===== PRODUCTS ===== */
