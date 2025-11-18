@@ -197,6 +197,21 @@ nav a {
   text-align: center;
 }
 
+#accessories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+#bags h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
 
 #products, #products-page {
   padding: 60px 50px;
