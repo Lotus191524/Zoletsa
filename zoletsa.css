@@ -1,7 +1,6 @@
 /* ======================== */
 /* GLOBAL STYLING           */
 /* ======================== */
-
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +119,6 @@ nav a:hover {
 
 .cart a:hover {
   color: #b38a63;
-  transform: scale(1.1);
 }
 
 .cart-count {
@@ -177,7 +175,6 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
-/* Slider buttons */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -199,23 +196,6 @@ nav a:hover {
 }
 
 /* ======================== */
-/* GLOBAL IMAGE RULES       */
-/* ======================== */
-img {
-  border-radius: 10px; /* slightly rounded corners */
-  object-fit: contain; /* show full product */
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
-}
-
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
-}
-
-/* ======================== */
 /* PRODUCT GRID / CARDS      */
 /* ======================== */
 #products, #products-page {
@@ -232,7 +212,7 @@ img:hover {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* FORCE 3 per row on desktop/tablet */
   gap: 40px;
   justify-items: center;
 }
@@ -245,11 +225,6 @@ img:hover {
   align-items: center;
   justify-content: flex-start;
   height: auto;
-  transition: transform 0.3s ease;
-}
-
-.product:hover {
-  transform: translateY(-5px);
 }
 
 .product h3 {
@@ -272,47 +247,24 @@ img:hover {
   max-width: 250px;
 }
 
-/* ======================== */
-/* RESPONSIVE GRID          */
-/* ======================== */
-@media (max-width: 900px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .product img {
-    max-width: 200px;
-  }
-
-  .product h3 {
-    font-size: 1rem;
-  }
+.product img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
 }
 
-@media (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .product img {
-    max-width: 170px;
-  }
-
-  .product h3 {
-    font-size: 0.95rem;
-  }
-
-  .product .description {
-    font-size: 0.9rem;
-  }
+.product:hover img {
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
 }
 
 /* ======================== */
-/* ABOUT / CONTACT / FOOTER */
+/* ABOUT                     */
 /* ======================== */
-.about, .contact {
+.about {
   padding: 60px 50px;
   text-align: center;
 }
@@ -327,6 +279,14 @@ img:hover {
   line-height: 1.7;
   max-width: 700px;
   margin: auto;
+}
+
+/* ======================== */
+/* CONTACT                   */
+/* ======================== */
+.contact {
+  padding: 70px 60px;
+  text-align: center;
 }
 
 .contact input {
@@ -350,6 +310,9 @@ img:hover {
   background: #a17852;
 }
 
+/* ======================== */
+/* FOOTER                    */
+/* ======================== */
 footer {
   padding: 30px;
   text-align: center;
@@ -358,31 +321,34 @@ footer {
 }
 
 /* ======================== */
-/* RESPONSIVE ADJUSTMENTS    */
+/* RESPONSIVE DESIGN         */
 /* ======================== */
+
+/* Tablet */
 @media (max-width: 900px) {
-  header { padding: 20px 30px; }
-  .caption h2 { font-size: 2.2rem; }
-  .product img { width: 200px; height: auto; }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* STILL 3 per row on tablet */
+    gap: 30px;
+  }
+
+  .product img {
+    max-width: 200px;
+  }
 }
 
+/* Phone */
 @media (max-width: 600px) {
-  header { flex-direction: column; text-align: center; padding: 15px 10px; gap: 10px; }
-  header img { width: 45px; }
-  nav a { margin: 8px; font-size: 0.9rem; }
-  .hero { height: 60vh; }
-  .prev, .next { font-size: 1.8rem; padding: 8px 12px; }
-  .caption { left: 5%; bottom: 12%; padding: 12px 18px; }
-  .caption h2 { font-size: 1.5rem; }
-  .caption p { font-size: 0.85rem; }
-  .product-grid { grid-template-columns: 1fr; gap: 35px; padding: 0 20px; }
-  .product img { width: 170px; height: auto; }
-  .about { padding: 40px 20px; }
-  .about-content h2 { font-size: 1.8rem; }
-  .about-content p { font-size: 1rem; }
-  .contact { padding: 40px 20px; }
-  .contact form { display: flex; flex-direction: column; gap: 12px; align-items: center; }
-  .contact input { width: 90%; }
-  .contact button { width: 60%; padding: 12px; }
-  footer { font-size: 0.9rem; }
+  .product-grid {
+    grid-template-columns: 1fr; /* single column for small screens */
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .product img {
+    max-width: 170px;
+  }
+
+  .product h3 {
+    font-size: 0.95rem;
+  }
 }
