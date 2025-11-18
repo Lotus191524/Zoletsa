@@ -207,22 +207,24 @@ nav a:hover {
 }
 
 /* ===== PRODUCTS ===== */
+/* PRODUCT SECTION */
 #products {
   padding: 60px 50px;
   text-align: center;
+  background-color: #f5f2ef;
 }
 
 #products h2 {
   font-size: 2.5rem;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
 
-/* Product Grid — Always 3 columns */
+/* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
   gap: 40px;
   justify-items: center;
 }
@@ -230,19 +232,28 @@ nav a:hover {
 /* Product Card */
 .product {
   text-align: center;
-  padding: 10px;
-  transition: 0.3s;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 350px; /* consistent height */
+  transition: transform 0.3s ease;
 }
 
-/* Perfect Circles */
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image */
 .product img {
-  width: 180px; /* smaller size for mobile */
+  width: 180px;
   height: 180px;
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 50%;
   border: 4px solid #d6c3a8;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .product:hover img {
@@ -250,11 +261,49 @@ nav a:hover {
   border-color: #b38a63;
 }
 
+/* Product Title */
 .product h3 {
-  margin-top: 12px;
+  margin-top: 15px;
   font-size: 1.1rem;
   letter-spacing: 1px;
 }
+
+/* RESPONSIVE GRID */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .product img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .product h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .product img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .product h3 {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* ===================== RESPONSIVE ADJUSTMENTS ===================== */
 
