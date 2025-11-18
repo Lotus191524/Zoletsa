@@ -1,45 +1,41 @@
+/* ================================
+   SLIDER
+================================= */
+
 let slideIndex = 0;
-showSlides(slideIndex);
+const slides = document.querySelectorAll(".slide");
 
+// Show slide
+function showSlide(n) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[n].classList.add("active");
+}
+
+// Buttons
 function changeSlide(n) {
-  showSlides(slideIndex += n);
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
+  showSlide(slideIndex);
 }
 
-function showSlides(n) {
-  let slides = document.getElementsByClassName("slide");
-  
-  if (n >= slides.length) slideIndex = 0;
-  if (n < 0) slideIndex = slides.length - 1;
+// Auto slide every 5 sec
+setInterval(() => {
+  changeSlide(1);
+}, 5000);
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-  }
+// Initialize slider
+showSlide(slideIndex);
 
-  slides[slideIndex].classList.add("active");
-}
 
-// =====================
-// ADD TO CART FUNCTION
-// =====================
+/* ================================
+   SEARCH BAR
+================================= */
 
-// Select all Add to Cart buttons
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
-const cartCount = document.querySelector(".cart-count");
+function searchProducts() {
+  let input = document.getElementById("productSearch").value.toLowerCase();
+  let items = document.querySelectorAll(".product");
 
-// Initialize cart counter
-let cartItems = 0;
-
-addToCartButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    cartItems++;
-    cartCount.textContent = cartItems;
-
-    // Optional: alert showing which product was added
-    const productName = button.getAttribute("data-name");
-    alert(`${productName} has been added to your cart!`);
+  items.forEach(product => {
+    const text = product.innerText.toLowerCase();
+    product.style.display = text.includes(input) ? "block" : "none";
   });
-});
-
-
-// Example usage: Call addToCart() when a product is clicked
-// <button onclick="addToCart()">Add to Cart</button>
+}
