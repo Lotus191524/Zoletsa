@@ -14,23 +14,21 @@
   <div class="logo">
     <img src="Products/Zoletsalogo.jpg" alt="Zoletsa Fashion Logo">
     <h1>Zoletsa</h1>
-    
   </div>
 
   <nav>
     <a href="#hero">Home</a>
     <a href="dresses.html">Dresses</a>
     <a href="Knitwear.html">Knitwear</a>
-    <a href="dresses.html">Bags</a>
-    <a href="accessories.html">Accesories</a>
+    <a href="bags.html">Bags</a>
+    <a href="accessories.html">Accessories</a>
     <a href="bottoms.html">Bottoms & Jeans</a>
     <a href="Underwearandsleepwear.html">Underwear & Sleepwear</a>
     <a href="swimwear.html">Swimwear</a>
     <a href="Maternity.html">Maternity</a>
-     <div class="cart">
-      <a href="#cart" title="Your Cart">
-        <span class="cart-count"></span>
-      </a>
+    <a href="#cart" class="cart" title="Your Cart">
+      <span class="cart-count"></span>
+    </a>
   </nav>
 </header>
 
@@ -56,84 +54,100 @@
   <button class="next" onclick="changeSlide(1)">&#10095;</button>
 </section>
 
-<!-- PRODUCTS -->
+<!-- SEARCH BAR -->
+<div class="search-container">
+  <input type="text" id="productSearch" placeholder="Search products...">
+  <button onclick="searchProducts()">🔍</button>
+</div>
 
- 
-  <!-- Search Bar -->
-  <div class="search-container">
-    <input type="text" id="productSearch" placeholder="Search products...">
-    <button onclick="searchProducts()">🔍</button>
-  </div>
-  
+<!-- PRODUCTS -->
 <section id="products">
   <h2>Featured Products</h2>
 
+  <a href="dresses.html" class="product-link">
   <div class="product-grid">
-<a href="dresses.html" class="product-link">
-  <div class="product">
-    <img src="Products/ZoletsaDresses.jpg" alt="Dresses">
-    <h3>Dresses</h3>
-  </div>
-</a>
-
-    <div class="product">
-      <a href="Knitwear.html" class="product-link">
-      <img src="Products/ZoletsaKnitwear.jpg" alt="Knitwear">
-      <h3>Knitwear</h3>
-    </div>
+      <div class="product">
+        <img src="Products/ZoletsaDresses.jpg" alt="Dresses">
+        <h3>Dresses</h3>
+      </div>
     </a>
-    
-    <div class="product">
-       <a href="bags.html" class="product-link">
-      <img src="Products/ZoletsaBags.jpg" alt="Bags">
-      <h3>Bags</h3>
-    </div>
 
-    <div class="product">
-      <img src="Products/JoletsaAccesories.jpg" alt="Accessories">
-      <h3>Accessories</h3>
-    </div>
+    <a href="Knitwear.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaKnitwear.jpg" alt="Knitwear">
+        <h3>Knitwear</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaBottoms.jpg" alt="Bottoms & Jeans">
-      <h3>Bottoms & Jeans</h3>
-    </div>
+    <a href="bags.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaBags.jpg" alt="Bags">
+        <h3>Bags</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaShoes.jpg" alt="Shoes">
-      <h3>Shoes</h3>
-    </div>
+    <a href="accessories.html" class="product-link">
+      <div class="product">
+        <img src="Products/JoletsaAccesories.jpg" alt="Accessories">
+        <h3>Accessories</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaTops.jpg" alt="Tops">
-      <h3>Tops, Blouses & Tees</h3>
-    </div>
+    <a href="bottoms.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaBottoms.jpg" alt="Bottoms & Jeans">
+        <h3>Bottoms & Jeans</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaPjamas.jpg" alt="Sleepwear">
-      <h3>Underwear & Sleepwear</h3>
-    </div>
+    <a href="shoes.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaShoes.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaSwimwear.jpg" alt="Swimwear">
-      <h3>Swimwear</h3>
-    </div>
+    <a href="tops.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaTops.jpg" alt="Tops, Blouses & Tees">
+        <h3>Tops, Blouses & Tees</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZoletsaMaternity.jpg" alt="Maternity">
-      <h3>Maternity</h3>
-    </div>
+    <a href="underwear.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaPjamas.jpg" alt="Underwear & Sleepwear">
+        <h3>Underwear & Sleepwear</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/Zolestabeautyandhealth.jpg" alt="Beauty and Health">
-      <h3>Beauty & Health</h3>
-    </div>
+    <a href="swimwear.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaSwimwear.jpg" alt="Swimwear">
+        <h3>Swimwear</h3>
+      </div>
+    </a>
 
-    <div class="product">
-      <img src="Products/ZolestaBagsandluggage.jpg" alt="Bags & Luggage">
-      <h3>Bags & Luggage</h3>
-    </div>
+    <a href="maternity.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZoletsaMaternity.jpg" alt="Maternity">
+        <h3>Maternity</h3>
+      </div>
+    </a>
 
+    <a href="beauty.html" class="product-link">
+      <div class="product">
+        <img src="Products/Zolestabeautyandhealth.jpg" alt="Beauty and Health">
+        <h3>Beauty & Health</h3>
+      </div>
+    </a>
+
+    <a href="luggage.html" class="product-link">
+      <div class="product">
+        <img src="Products/ZolestaBagsandluggage.jpg" alt="Bags & Luggage">
+        <h3>Bags & Luggage</h3>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -165,4 +179,5 @@
 <script src="zoletsascript.js"></script>
 </body>
 </html>
+
 
