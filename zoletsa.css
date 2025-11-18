@@ -59,9 +59,6 @@ nav a {
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #b38a63;
-}
 
 /* ======================== */
 /* SEARCH BAR               */
@@ -115,10 +112,6 @@ nav a:hover {
   color: #3a3a3a;
   text-decoration: none;
   transition: 0.3s;
-}
-
-.cart a:hover {
-  color: #b38a63;
 }
 
 .cart-count {
@@ -191,10 +184,6 @@ nav a:hover {
 .prev { left: 20px; }
 .next { right: 20px; }
 
-.prev:hover, .next:hover {
-  background: #e7dbd0;
-}
-
 /* ======================== */
 /* PRODUCT GRID / CARDS      */
 /* ======================== */
@@ -257,9 +246,6 @@ nav a:hover {
   transition: box-shadow 0.3s ease;
 }
 
-.product:hover img {
-  box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
-}
 
 /* ======================== */
 /* ABOUT                     */
