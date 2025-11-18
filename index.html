@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zoletsa Fashion</title>
-  <link rel="stylesheet" href="zoletsa.css"/>
+  <link rel="stylesheet" href="zoletsa.css" />
 </head>
 
 <body>
@@ -26,16 +26,14 @@
     <a href="Underwearandsleepwear.html">Underwear & Sleepwear</a>
     <a href="swimwear.html">Swimwear</a>
     <a href="Maternity.html">Maternity</a>
-    <a href="#cart" class="cart" title="Your Cart">
-      <span class="cart-count"></span>
-    </a>
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- HERO / SLIDER -->
 <section id="hero" class="hero">
-  <div class="slide active">
-    <img src="Products/slider3.T.jpg" alt="Luxury Fashion">
+
+  <div class="slide">
+    <img src="Products/slider3.T.jpg" alt="Slide 1">
     <div class="caption">
       <h2>Flash Sale Elegance</h2>
       <p>Our Exclusive Flash Sale Begins</p>
@@ -43,20 +41,21 @@
   </div>
 
   <div class="slide">
-    <img src="Products/secondslider.jpg" alt="Swim Wear">
+    <img src="Products/secondslider.jpg" alt="Slide 2">
     <div class="caption">
-      <h2>Summer styles, splash-ready prices</h2>
-      <p>55% OFF Swimwear..</p>
+      <h2>Summer Styles</h2>
+      <p>55% OFF Swimwear</p>
     </div>
   </div>
 
   <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
   <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
 </section>
 
 <!-- SEARCH BAR -->
 <div class="search-container">
-  <input type="text" id="productSearch" placeholder="Search products...">
+  <input type="text" id="productSearch" placeholder="Search products..." />
   <button onclick="searchProducts()">🔍</button>
 </div>
 
@@ -64,8 +63,9 @@
 <section id="products">
   <h2>Featured Products</h2>
 
-  <a href="dresses.html" class="product-link">
   <div class="product-grid">
+
+    <a href="dresses.html" class="product-link">
       <div class="product">
         <img src="Products/ZoletsaDresses.jpg" alt="Dresses">
         <h3>Dresses</h3>
@@ -107,47 +107,6 @@
       </div>
     </a>
 
-    <a href="tops.html" class="product-link">
-      <div class="product">
-        <img src="Products/ZoletsaTops.jpg" alt="Tops, Blouses & Tees">
-        <h3>Tops, Blouses & Tees</h3>
-      </div>
-    </a>
-
-    <a href="underwear.html" class="product-link">
-      <div class="product">
-        <img src="Products/ZoletsaPjamas.jpg" alt="Underwear & Sleepwear">
-        <h3>Underwear & Sleepwear</h3>
-      </div>
-    </a>
-
-    <a href="swimwear.html" class="product-link">
-      <div class="product">
-        <img src="Products/ZoletsaSwimwear.jpg" alt="Swimwear">
-        <h3>Swimwear</h3>
-      </div>
-    </a>
-
-    <a href="maternity.html" class="product-link">
-      <div class="product">
-        <img src="Products/ZoletsaMaternity.jpg" alt="Maternity">
-        <h3>Maternity</h3>
-      </div>
-    </a>
-
-    <a href="beauty.html" class="product-link">
-      <div class="product">
-        <img src="Products/Zolestabeautyandhealth.jpg" alt="Beauty and Health">
-        <h3>Beauty & Health</h3>
-      </div>
-    </a>
-
-    <a href="luggage.html" class="product-link">
-      <div class="product">
-        <img src="Products/ZolestaBagsandluggage.jpg" alt="Bags & Luggage">
-        <h3>Bags & Luggage</h3>
-      </div>
-    </a>
   </div>
 </section>
 
