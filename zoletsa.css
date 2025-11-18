@@ -56,7 +56,10 @@ nav a {
   font-size: 1rem;
   letter-spacing: 1px;
   color: #3a3a3a;
+  text-decoration: none;
   transition: 0.3s;
+}
+
 }
 
 
