@@ -99,31 +99,21 @@ nav a {
   background: #a17852;
 }
 
-/* ======================== */
-/* CART ICON                */
-/* ======================== */
-.cart {
-  margin-left: 20px;
-  position: relative;
-}
-
-.cart a {
-  font-size: 1.4rem;
-  color: #3a3a3a;
-  text-decoration: none;
+.add-to-cart {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #b38a63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.cart-count {
-  position: absolute;
-  top: -8px;
-  right: -10px;
-  background: #b33c6d;
-  color: #fff;
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  border-radius: 50%;
+.add-to-cart:hover {
+  background-color: #a17852;
 }
+
 
 /* ======================== */
 /* HERO / SLIDER            */
